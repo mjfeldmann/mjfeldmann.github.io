@@ -5,10 +5,10 @@ title: Prints and Pre-Prints
 
 
 	<div class="table-wrapper">
-		{% for papers in site.categories.papers %}
-			<div id="papers">
-				<h2><a href="{{ papers.link }}">{{ papers.title }}</a></h2><iframe allowfullscreen frameborder="0" height="315" src="{{ papers.link }}" width="560"></iframe><br>
-				<small>{{papers.small}}</small><br>
+		{% for paper in site.categories.papers %}
+			<div id="paper">
+				<h2><a href="{{ paper.link }}">{{ papers.title }}</a></h2><iframe allowfullscreen frameborder="0" height="315" src="{{ paper.link }}" width="560"></iframe><br>
+				<small>{{paper.small}}</small><br>
 				<br><br><br>
 			</div>
 		{% endfor %}
