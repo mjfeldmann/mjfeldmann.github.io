@@ -1,0 +1,26 @@
+# Site settings
+title: Mitchell J. Feldmann
+description: |
+  <i>Science good!</i>
+  
+          
+owner: Mitchell J. Feldmann
+first_published: 2020
+email: mjfeldmann@ucdavis.edu
+baseurl: "" 
+url: "mjfeldmann.github.io" # the base hostname & protocol for your site
+social:
+  twitter: https://twitter.com/MitchFeldmann
+  github: https://github.com/mjfeldmann
+  linkedin-square: https://www.linkedin.com/in/mjfeldmann/
+  email: "mailto:mjfeldmann@ucdavis.edu"
+
+
+# Build settings
+markdown: kramdown
+
+#sass:
+#  style: compressed
+
+gems:
+  - jekyll-sitemap

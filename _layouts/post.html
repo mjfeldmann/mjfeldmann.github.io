@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+    
+      {% include header.html %}
+  
+    
+<article id="main">
+
+  <section class="wrapper style5">
+    <div class="inner">
+    <i><h2>{{ page.title }}</h2></i><hr>
+    <small><i>{{ page.date | date: "%b %-d, %Y" }}</i></small><br><br>
+
+      {{ content }}
+    </div>
+  </section>
+
+</article>
+
+
+      {% include footer.html %}
+
+      {% include scripts.html %}
+
+    </div>
+
+  </body>
+
+</html>

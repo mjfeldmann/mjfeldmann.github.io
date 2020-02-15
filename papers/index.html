@@ -1,0 +1,15 @@
+---
+layout: post
+title: Prints and Pre-Prints
+---
+
+
+	<div class="table-wrapper">
+		{% for sound in site.categories.sounds %}
+			<div id="sound">
+				<h2><a href="{{ sound.link }}">{{ sound.title }}</a></h2><iframe allowfullscreen frameborder="0" height="315" src="{{ sound.link }}" width="560"></iframe><br>
+				<small>{{sound.small}}</small><br>
+				<br><br><br>
+			</div>
+		{% endfor %}
+	</div>
