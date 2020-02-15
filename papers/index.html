@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Prints and Pre-Prints
+title: Prints and Pre-prints
 ---
 
 
 	<div class="table-wrapper">
 		{% for paper in site.categories.papers %}
-			<div id="paper">
-				<h2><a href="{{ paper.link }}">{{ papers.title }}</a></h2><iframe allowfullscreen frameborder="0" height="315" src="{{ paper.link }}" width="560"></iframe><br>
-				<small>{{paper.small}}</small><br>
-				<br><br><br>
+			<div id="rightquote">
+				<h2><a href="{{ paper.link }}">{{ paper.title }}</a></h2><i>{{ paper.small }}</i><br>
+				<br><br><br>				
 			</div>
 		{% endfor %}
 	</div>
+
