@@ -1,0 +1,16 @@
+---
+layout: post
+title: Data Releases
+---
+
+
+	<div class="table-wrapper">
+		{% for data in site.categories.datas %}
+			<div id="rightquote">
+				<h2><a href="{{ data.link }}">{{ data.title }}</a></h2><i>{{ data.small }}</i><br>
+				<br><br><br>				
+			</div>
+		{% endfor %}
+	</div>
+
+<i>More Data to be released on the way!</i>
