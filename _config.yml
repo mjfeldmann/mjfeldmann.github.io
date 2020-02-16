@@ -12,7 +12,7 @@ email: mjfeldmann@ucdavis.edu
 baseurl: "" 
 url: "mjfeldmann.github.io" # the base hostname & protocol for your site
 social:
-  Twitter: https://twitter.com/MitchFeldmann
+  twitter: https://twitter.com/MitchFeldmann
   github: https://github.com/mjfeldmann
   linkedin-square: https://www.linkedin.com/in/mjfeldmann/
   email: "mailto:mjfeldmann@ucdavis.edu"
