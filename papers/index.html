@@ -4,13 +4,11 @@ title: Prints and Pre-prints
 ---
 
 
-	<div class="table-wrapper">
-		{% for paper in site.categories.papers %}
-			<div id="rightquote">
-				<h2><a href="{{ paper.link }}">{{ paper.title }}</a></h2><i>{{ paper.small }}</i><br>
-				<br><br>				
-			</div>
-		{% endfor %}
-	</div>
-
-<i>More publications on the way!</i>
+<div class="table-wrapper">
+	{% for paper in site.categories.papers %}
+		<div id="rightquote">
+			<h2><a href="{{ paper.link }}">{{ paper.title }}</a></h2><i>{{ paper.small }}</i><br>
+			<br><br>				
+		</div>
+	{% endfor %}
+</div>
