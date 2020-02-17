@@ -9,4 +9,6 @@ Hello World!
 
 This is a test post to make sure that everything is working.
 
+I think that I am going to try to use this blog section to discuss and review print and preprints that I caught my attention, most likely plant quantitative genetics, statistics, and digital phenotyping. Unsure at the moment!
+
 Thanks for visiting!
