@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hello World!"
+title:  "Latent Space Phenotyping"
 date:   2020-02-18 13:00:00
 categories: blog
 permalink: /posts/ubbensReview/
