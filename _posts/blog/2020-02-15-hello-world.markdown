@@ -13,6 +13,7 @@ I think that I am going to try to use this blog section to discuss and review pr
 
 Thanks for visiting!
 
+<br><br><hr>
 <!-- begin wwww.htmlcommentbox.com -->
  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
  <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
