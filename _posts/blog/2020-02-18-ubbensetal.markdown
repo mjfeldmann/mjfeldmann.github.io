@@ -11,7 +11,7 @@ I am thinking about adopting a paper review style format for this blog. This may
 
 That being stated, I am going to start with Ubbens et al (2020) Latent Space Phenotyping: Automatic Image-Based Phenotyping for Treatment Studies. 
 
-I was able to talk about this work with Jordan Ubbens (@jordanubbens) at Phenome2019 after his presentation on this work, because he replied to a Twitter message. I slipped into his DMs so-to-speak. IFF you are attending Phenome2020, I highly recommend the digital phenotyping workshop that Jordan is speaking at.
+I was able to talk about this work with Jordan Ubbens (@jordanubbens) at Phenome 2019 after his presentation on this work, because he replied to a Twitter message. I slipped into his DMs so-to-speak. IFF you are attending Phenome2020, I highly recommend the digital phenotyping workshop that Jordan is speaking at.
 
 Anyways, I find this work fascinating because it is closely related to several projects that I am working on regarding fruit shape. Furthermore, there has recently been more references to "latent space phenotypes" (LSP) and as far as I can tell, that stems from this paper. At least it is the reference that Joseph Gage and I have used for this phrase. However, it is of the same conceptual meaning as a "Cryptotype" coined by Dr. Daniel Chitwood. "We propose the term cryptotype to describe latent, multivariate phenotypes that maximize the separation of a priori classes" (Chitwood & Topp 2015). This idea of a latent space extends back to the 80s with Eigen-faces, which was used in plants by Horgan in the early 2000s to examine internal color variation in carrots.  
 
@@ -30,4 +30,5 @@ The other challenge is having the proper computing machinery available. Neural N
 I have recently become aware of some relatively lightweight R packages for auto-encoders. It may be a fun exercise to do a side by side comparison with Keras/Tensorflow and R/autoencoder and R/ANN2. 
 
 Best,
+
 Mitchell
