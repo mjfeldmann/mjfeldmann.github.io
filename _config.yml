@@ -13,8 +13,10 @@ first_published: 2020
 email: mjfeldmann@ucdavis.edu
 baseurl: "" 
 url: "mjfeldmann.github.io" # the base hostname & protocol for your site
-title_image: "/icons/mitch.JPG"
+
+title_image: "https://mjfeldmann.github.io/icons/mitch.JPG"
 twitter_username: MitchFeldmann
+
 social:
   twitter: https://twitter.com/MitchFeldmann
   github: https://github.com/mjfeldmann
