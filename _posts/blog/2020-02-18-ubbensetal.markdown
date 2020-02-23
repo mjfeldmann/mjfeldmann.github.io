@@ -9,7 +9,7 @@ Hello dear reader,
 
 I am thinking about adopting a paper review style format for this blog. This may extend to albums as I expand the old list of things that I am currently listening to and currently reading, see <a href="mjfeldmann.github.io">the homepage</a>. Also, I should mention that my style will likely be a bit "from the hip."
 
-That being stated, I am going to start with Ubbens et al (2020) Latent Space Phenotyping: Automatic Image-Based Phenotyping for Treatment Studies. 
+That being stated, I am going to start with Ubbens et al (2020)  Latent Space Phenotyping: Automatic Image-Based Phenotyping for Treatment Studies. https://doi.org/10.34133/2020/5801869.
 
 I was able to talk about this work with Jordan Ubbens (@jordanubbens) at Phenome 2019 after his presentation on this work, because he replied to a Twitter message. I slipped into his DMs so-to-speak. IFF you are attending Phenome2020, I highly recommend the digital phenotyping workshop that Jordan is speaking at.
 
