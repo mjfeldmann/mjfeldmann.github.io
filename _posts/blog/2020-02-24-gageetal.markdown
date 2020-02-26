@@ -27,6 +27,8 @@ The second thing these authors do to attempt to make sense of these LSPs is pred
 
 The authors discuss the cost of deploying a rover vs the cost of deploying humans for phenotyping (the rover is much cheaper) and the prediction of certain traits is quite high, but is it high enough? One thing I would like to see is a coincidence score of the top 10% plant height against the top 10% LSP predicted plant height. For example, are the best (worst) performing individuals predicted to be the best performing individuals by LSPs? If I were to select based on the LSP prediction, am I going to be discarding the same lines and keeping the same lines as if i were to hand measure them? What is the difference in genetic gain made by acting directly on plant height or through a correlated LSP? This, at least, would make for a valuable follow up and I recognize that not all problems can/should be tackled in a single document.
 
+ I, for one, am excited for the continued integration of terrestrial and aerial unaccompanied automous vehicles (UAVs) into phenomics, genetics, and agriculture.
+
 Best,
 Mitchell
 
