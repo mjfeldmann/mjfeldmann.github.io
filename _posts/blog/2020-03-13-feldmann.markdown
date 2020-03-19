@@ -58,6 +58,8 @@ The future of this work is unknown and tightly linked to present status of laten
 Best,
 Mitchell
 
+PS. I realized after posting this that I had forgotten to talk about PPKC, which I will save for the next post.
+
 <div>
 <hr>
 <!-- begin wwww.htmlcommentbox.com -->
