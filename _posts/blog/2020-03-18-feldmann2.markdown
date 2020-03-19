@@ -17,9 +17,9 @@ A lot of the strawberry shape literature relies on hand classified shape categor
 
 PPKC consists of a few steps:
 
-(1) Perform k-means clustering for a range of levels of "k." If the target level is k=5, you should have k=2,...,5.
+(1) Perform k-means clustering for a range of levels of "k." If the target level is k=5, you should have k=2,...,5. 
 
-(2) Estimate the portion of each cluster at a given level of "k" that came from each previous cluster for each "k". For any cluster when k=5, ther are 9 observations. there should be a 9 x 5 matrix.
+(2) Estimate the portion of each cluster at a given level of "k" that came from each previous cluster for each "k". For any cluster when k=5, ther are 9 observations so there should be a 9 x 5 matrix.
 
 (3) Calculate the covariance. This should be 5x5 when k=5.
 
@@ -48,13 +48,14 @@ The code looks like this:
     }
 
 where:
-'dat' is a data.frame() which objects as rows, and the columns are differeny vaues of "k."
-'lev' is the number of levels of a given value of "k" (i.e., k)
-'prev' is a vector containing all values of <k.
-'n' is how many clusters there are in all previous levels of "k"
-'M' is our n x k matrix
-'CM' is the covariance matrix on M
-"PPKC" is the Principal Progression of K Clusters 
+
+> 'dat' is a data.frame() which objects as rows, and the columns are differeny vaues of "k."
+> 'lev' is the number of levels of a given value of "k" (i.e., k)
+> 'prev' is a vector containing all values of "k".
+> 'n' is how many clusters there are in all previous levels of "k"
+> 'M' is our n x k matrix
+> 'CM' is the covariance matrix on M
+> "PPKC" is the Principal Progression of K Clusters 
 
 On a 2015 MBP 2.9 GHz Dual-Core Intel Core i5 and 8 levels of K to sort, this exercise takes ~0.2s-ish or something like that... it is in the paper.
 
@@ -62,10 +63,12 @@ For the data presented in this data, we are able to order categories (at least t
 
 That is the PPKC... I think it is kind of cool...
 
+It is important to KISS (Keep It Simple, Stupid).
+
 Best,
 Mitchell
 
-
+PS. Dr. Pat Brown is partially to blame for this idea and Dr. Amy Tabb is responsible for calling out my horrible first draft notation.
 
 <div>
 <hr>
