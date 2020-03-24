@@ -17,9 +17,17 @@ This is a protocol, pre-print that generally describes (e.g., does not go into t
 
 Dr. Tabb's solution allows you to access the benefits of both image acquisition with cameras and geometric accuracy of flatbed scanners. Literally the best of both worlds, IMO. I wish I had known about this process before I started collecting data for my work on strawberry shape. In the future, if I continue to pursue morphometrics of fruit, I will certainly be adopting this method.
 
+<ul style="center">
+<center><a href="https://github.com/amy-tabb/CASS"><img src="/icons/T2.png" alt="Standard Check" style="width:50%;height:50%;border:1px solid black"></a></center>
+</ul>
+
 From the CASS github repo: "[CASS] takes an image of an object on top of an aruco calibration pattern, calibrates the camera using the detected aruco information as well as EXIF tag information, and undistorts and computes the homography from the current location of the aruco calibration pattern in the image to its location in physical space. Then the image is warped to match the coordinate system of the aruco coordinate system, scaled by a user-selected parameter." CASS is super easy to install and build from source on MacOS X and Ubuntu 18.04 LTS. I have not tried on windows, but I have a sneaking suspicion that the Docker release will be "more" useful for Windows folks.
 
 This is something you can play around with while you are stuck inside during the Great Toilet Paper Shortage of 2020.  Totally a DYI project: camera, printer and paper for aruco marker panel, plant or stand-in plant-like object for imaging, crap computer and internet for software, and your brain.  Done.  For some existing data check out the Zenodo repository for this project (http://doi.org/10.5281/zenodo.3677473) and just have fun! Simple.
+
+<ul style="center">
+<center><a href="https://github.com/amy-tabb/CASS"><img src="/icons/T1.png" alt="Grape Cluster Calibration" style="width:50%;height:50%;border:1px solid black"></a></center>
+</ul>
 
 The aruco panel is made up of a white background and black, indexed, data-matrix-like square markers.  The purpose of these markers is provide a checker board grid of known size (and shape) and density. Ideally, the camera is positioned directly above (or in front) of the aruco panel. This is likely more important for 3-D objects where occlusion at extreme viewing angles is likely problematic. Calibration doesn't allow your camera to infer what isn't seen after all. That is really it. It is that simple. The real beauty of this solution, is that every image, no matter what camera, can be calibrated to the same aruco panel details (just print your panel n-times, or for however many camera set ups you have rolling). 
 
@@ -29,8 +37,6 @@ Where do we go from here? There are infinite possibilities really, but I think t
 
 Best,
 Mitchell
-
-PS. I might start embedding images/figures into these posts. Only time will tell. I assume that it is simple to do this.
 
 <div>
 <hr>
