@@ -21,7 +21,6 @@ Thanks, Dan.
 
 My thesis focuses on yield in strawberry, but I also inherited the weight of fruit quality assessments (Brix, Acidity, Anthocyanins, Texture, color, etc). These assessments are incredibly expensive, and so in order to get the most out of it, I took images containing >2 strawberries on average (1-3) (Figure 1) with the intent of doing Elliptical Fourier analysis and some linear descriptors (aspect ratio, circularity, etc.). The basics, I guess.
 
-
 <ul style="center">
 <center><a href="https://doi.org/10.1101/736397"><img src="/icons/F1.png" alt="Imaging" style="width:25%;height:50%;border:1px solid black"></a></center>
 </ul>
@@ -57,6 +56,10 @@ TLDR; I use k-means cluster to classify images based on the pixel values (only 4
 (2) I performed variable selection using random forest regression. There is a wonderful R package for this called "VSURF" that made variable selection really stinking easy. I performed RF classification for each value of K (i.e., 2-10) and selected the variables that were most important in 3/9 values of K. The reasoning behind this is that I want to only choose features that would be broadly predictive of shape class across multiple levels of K. In a more targeted approach, I would have selected only those variables that were most important for delineating the K=4 primary clusters.
 
 (3) Then, I performed Support Vector Classification and Linear Discriminant Analysis using e1071::svm() and MASS::lda(). I chose these two algorithms because they are widely known. I had considering also doing quadratic discriminant analysis, but I figure that it would land somewhere in between svm and lda anyways. Could be a cool extra bit for a tutorial later on? Accuracy of classification was surprising to me (in a good way). I will let you check out the last table in the paper, it is a doozy and goes on forever, I apologize. There were so many facets, and I didn't know how else to summarize it all.
+
+<ul style="center">
+<center><a href="https://doi.org/10.1101/736397"><img src="/icons/F4.png" alt="Feature Selection" style="width:50%;height:50%;border:1px solid black"></a></center>
+</ul>
 
 All in all, very few descriptors were needs to obtain high classification accuracies beyond the fit of k-means. The heritability of the predictors was high as well.
 
