@@ -23,7 +23,7 @@ My thesis focuses on yield in strawberry, but I also inherited the weight of fru
 
 
 <ul style="center">
-<center><a href="https://doi.org/10.1101/736397"><img src="/icons/F1.png" alt="Imaging" style="width:50%;height:50%;border:1px solid black"></a></center>
+<center><a href="https://doi.org/10.1101/736397"><img src="/icons/F1.png" alt="Imaging" style="width:25%;height:50%;border:1px solid black"></a></center>
 </ul>
 
 As I started learning how to extract features, I became... inspired.
