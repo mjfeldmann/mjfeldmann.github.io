@@ -17,7 +17,7 @@ This is a protocol, pre-print that generally describes (e.g., does not go into t
 
 A single ruler somewhere in the frame doesn't cut it for calibration (i.e., learning pixels-to-mm-transformation). Ever. I am not convinced by calibration-from-quarter or calibration-from-wire either. Distortion is continuously variable and is different for every pixel and that warping function cannot be learned from a single observation of a ruler, quarter, or wire in a single location in the frame.
 
-One arguement is: If you measured the diameter of a wire along the length of the copper wire in the image or the same quarter in multiple places within an image, you would not have the same error for every measured point. However, if you calibrate entire image, the error should be identical along the length of the wire or for any observation of a quarter.
+One arguement is: If you measured the diameter of a wire along the length of the copper wire in the image or the same quarter in multiple places within an image, you would not have the same error for every measured point. However, if you calibrate entire image, the error should be identical along the length of the wire or for any observation of a quarter. The same thing is maybe more obvious for a ruler. "1cm" measured in the middle will contain a different number of pixels compared to "1cm" at the edges of the ruler, because of the continuous, non-random distortion. The goal, obviously, should be to achieve an equal number of pixels-per-cm no matter what part of the image you are measuring.
 
 I am not sure how we have gotten on that in the plant community, I do it too, but dang it is effectively useless. 
 
