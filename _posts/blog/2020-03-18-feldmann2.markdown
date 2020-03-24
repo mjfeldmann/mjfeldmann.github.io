@@ -9,7 +9,7 @@ Hello dear reader,
 
 Let me tell you a tale to chill the bone...
 
-I was rambling and enjoying the thought of doing a large amount of morphometrics on binary images of strawberry fruit and I had dug myself into quite the hole. Holes are easy to find and easier to fall into when you aren't paying attention.
+I was rambling and enjoying the thought of doing a large amount of morphometrics on binary images of strawberry fruit and I had dug myself into quite the hole. Holes are easy to find and easier to fall into when you aren't paying attention. This work can be found at https://doi.org/10.1101/736397
 
 I had already quantified a large number of images using several techniques. I had also classified the fruits using k-means clustering. However, k-means does not attempt to assign an order to the categories; it only seeks to find them.
 
