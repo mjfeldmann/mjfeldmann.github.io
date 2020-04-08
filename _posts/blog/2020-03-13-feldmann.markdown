@@ -22,7 +22,7 @@ Thanks, Dan.
 My thesis focuses on yield in strawberry, but I also inherited the weight of fruit quality assessments (Brix, Acidity, Anthocyanins, Texture, color, etc). These assessments are incredibly expensive, and so in order to get the most out of it, I took images containing >2 strawberries on average (1-3) (Figure 1) with the intent of doing Elliptical Fourier analysis and some linear descriptors (aspect ratio, circularity, etc.). The basics, I guess.
 
 <ul style="center">
-<center><a href="https://doi.org/10.1101/736397"><img src="/icons/F1.png" alt="Imaging" style="width:25%;height:50%;border:1px solid black"></a></center>
+<center><a href="https://doi.org/10.1101/736397"><img src="/images/F1.png" alt="Imaging" style="width:25%;height:50%;border:1px solid black"></a></center>
 </ul>
 
 As I started learning how to extract features, I became... inspired.
@@ -30,7 +30,7 @@ As I started learning how to extract features, I became... inspired.
 TLDR; I extract 68 continuous features from each image using classic methods and novel methods. Please jump ahead 5 paragraphs to continue.
 
 <ul style="center">
-<center><a href="https://doi.org/10.1101/736397"><img src="/icons/F2.png" alt="Feature Extraction" style="width:50%;height:50%;border:1px solid black"></a></center>
+<center><a href="https://doi.org/10.1101/736397"><img src="/images/F2.png" alt="Feature Extraction" style="width:50%;height:50%;border:1px solid black"></a></center>
 </ul>
 
 (1) I extracted 11 linear/geometric features. These primarily came out of ImageJ, which I used for segmenting and isolating individual fruit, and consist entirely of ratios that are scale invariant.
@@ -44,7 +44,7 @@ TLDR; I extract 68 continuous features from each image using classic methods and
 (5) Strawberry outlines do not have obvious, biologically homologous landmarks (like grape/tomato leaves). To be able to perform generalized procrustes analysis, I broke the outline of each shape into a set of 50 evenly spaced pseudo-landmarks. I decomposed each landmark using PCA. and discarded landmarks with major axis variance less than the median major axis varianceof all landmarks. There was greater landmark variance at the tip and neck, as well as the left and right side of the fruit (the polar coordinates). These more variable landmarks were selected and then treated as observed variables in a SEM with 5 latent variables. 4 of these were manifest directly from the observed variables (i.e., they represent the "shared" variance of the observed variables) in the tip, neck, and the two side regions. The last latent variable is manifest by the 4 previous latent variables, and represents the shared variation of those 4 latent variables. I called this last variable "Shape." I had not seen this approach taken before, and at the time I was really excited about SEM, so much so that I took a class on SEM, taught by Dr. Mijke Rhemtulla, in my 5th year at UCD. 
 
 <ul style="center">
-<center><a href="https://doi.org/10.1101/736397"><img src="/icons/F3.png" alt="Features" style="width:50%;height:50%;border:1px solid black"></a></center>
+<center><a href="https://doi.org/10.1101/736397"><img src="/images/F3.png" alt="Features" style="width:50%;height:50%;border:1px solid black"></a></center>
 </ul>
 
 At this point I had too many variables (68) and honestly, that was both frightening and exciting. The entire goal was quantitative genetic analyses, but how on earth do you make sense of 68+ correlated traits that describe a single trait, i.e., fruit shape? Machine Learning.
@@ -58,7 +58,7 @@ TLDR; I use k-means cluster to classify images based on the pixel values (only 4
 (3) Then, I performed Support Vector Classification and Linear Discriminant Analysis using e1071::svm() and MASS::lda(). I chose these two algorithms because they are widely known. I had considering also doing quadratic discriminant analysis, but I figure that it would land somewhere in between svm and lda anyways. Could be a cool extra bit for a tutorial later on? Accuracy of classification was surprising to me (in a good way). I will let you check out the last table in the paper, it is a doozy and goes on forever, I apologize. There were so many facets, and I didn't know how else to summarize it all.
 
 <ul style="center">
-<center><a href="https://doi.org/10.1101/736397"><img src="/icons/F4.png" alt="Feature Selection" style="width:50%;height:50%;border:1px solid black"></a></center>
+<center><a href="https://doi.org/10.1101/736397"><img src="/iamges/F4.png" alt="Feature Selection" style="width:50%;height:50%;border:1px solid black"></a></center>
 </ul>
 
 All in all, very few descriptors were needs to obtain high classification accuracies beyond the fit of k-means. The heritability of the predictors was high as well.
@@ -67,7 +67,7 @@ I really loved working on this project, I have a ton of ideas for the next steps
 
 This work is hard to sell. It is 2D which is not holistically descriptive of strawberry fruit shape. It is is exclusively shape, which is not what most consumers are focused on, and most breeders and packers would be more concerns with ship-ability rather than "shape." But shape is part of appearance and is also part of packability and ship-ability. There is a lot of work to make fruit shape a critical component of strawberry breeding. We probably need to find the yield ceiling first.
 
-One idea I had, was to ask my twitter feed (and their twitter feeds) to participate in an online survey for fruit shape preference, to understand what the preferred shape is. It became clear, after discussion with Michael DeBolt (@MdeboltC) that I have no idea how to design a proper survey that will lead to unbiased answers, and so I dropped it. That, plus the requisite IRB approval, basically stopped me in my tracks on that front
+One idea I had, was to ask my twitter feed (and their twitter feeds) to participate in an online survey for fruit shape preference, to understand what the preferred shape is. It became clear, after discussion with Michaela DeBolt (@MdeboltC) that I have no idea how to design a proper survey that will lead to unbiased answers, and so I dropped it. That, plus the requisite IRB approval, basically stopped me in my tracks on that front
 
 The future of this work is unknown and tightly linked to present status of latent space phenotyping and morphometrics. I desperately hope to do more work like this in the future, because it is fun, challenging, motiviating, creative, and as infinite as our resolution and resolve.
 

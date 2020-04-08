@@ -66,7 +66,7 @@ where:
 On a 2015 MBP 2.9 GHz Dual-Core Intel Core i5 and 8 levels of K to sort, this exercise takes ~0.2s-ish or something like that... it is in the paper.
 
 <ul style="center">
-<center><a href="https://doi.org/10.1101/736397"><img src="/icons/PPKC.png" alt="Principal Progression of K Clusters" style="width:50%;height:50%;border:1px solid black"></a></center>
+<center><a href="https://doi.org/10.1101/736397"><img src="/images/PPKC.png" alt="Principal Progression of K Clusters" style="width:50%;height:50%;border:1px solid black"></a></center>
 </ul>
 
 For the data presented in this data, we are able to order categories (at least they visually make sense) up to k=8, when the optimal number of categories is k=4. Plenty of evidence of overfit. So, I am pretty excited about that. We didn't test this method on any other data sets, but I assume with enough data and enough "true" categories, this approach would work.  However, I assume that if a "true" path exists with a bubble, or bifurcation, this approach would fail as it assumes that there is a single linear path between two categories.
