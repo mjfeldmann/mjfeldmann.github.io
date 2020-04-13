@@ -3,7 +3,7 @@ layout: post
 title:  "Challenges of Color Calibration"
 date:   2020-04-12 12:00:00
 categories: blog
-permalink: /posts/berryColCal/
+permalink: /posts/ColCal/
 ---
 Hello dear reader,
 
