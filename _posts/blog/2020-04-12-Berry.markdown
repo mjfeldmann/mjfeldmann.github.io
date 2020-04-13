@@ -47,8 +47,9 @@ The illuminance uniformity is absolutely essential. Uniformity is also incredibl
 
 > This challenge is tackled best by putting diffusion material in front of the light bulbs. 
 
-However, we have to keep in mind that the diffusion material must also be "true neutral" otherwise the color accuracy will be diminished even if the bulbs are perfect.
+However, we have to keep in mind that the diffusion material must also be "true neutral" otherwise the color accuracy will be diminished even if the bulbs are perfect. The type of light fixture that you choose will impact your ability to get a light bulb to appear diffuse or not. If the aperature of the fixture is small, then the light will appear more focuses but totally unenclosed lighting is hard to "control" and you really don't need 360º of light. Turning the lights away from the target into a reflective white surface can help to generate diffuse light as well,  blah...
 
+Basically, my point is, perfection is almost unobtainable. What we need to do is recognize that in all circumstances we are comparing apples and oranges if the environment or camera changes. So, we need to standardize as much as possible and then be honest that all of our comparisons are relative and not absolute.
 
 Best,
 Mitchell
