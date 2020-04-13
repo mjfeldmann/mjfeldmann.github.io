@@ -27,7 +27,7 @@ There are two general procedures that are used to adjust the color in an image:
 <center><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3435966/pdf/sensors-12-07063.pdf"><img src="/images/CCQ.png" alt="Color Checker" style="width:50%;height:50%;border:1px solid black"></a></center>
 </ul>
 
-and
+and (10.7717/peerj.5727)
 
 <ul style="center">
 <center><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6174877/"><img src="/images/BQ.png" alt="Color Checker 2" style="width:50%;height:50%;border:1px solid black"></a></center>
