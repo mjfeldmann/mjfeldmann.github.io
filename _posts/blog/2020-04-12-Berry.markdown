@@ -11,7 +11,7 @@ Are you even out there?
 
 This blog post is later than the other ones have been. But I do have an excuse. I have been relentlessly working on a manuscript and finally submitted it on 04/07/2020 (!!). That article will doubtlessly make an appearance here at some point as I start to move away from image analysis stuff... maybe...
 
-However, there is still much to cover. Today, I am going to let my fingers do the talking and comment on Berry et al "An automated, high-throughput method for standardizing image color profiles to improve image-based plant phenotyping." PeerJ. 2018. (10.7717/peerj.5727). This paper is pretty nice and touches on a lot of problems related to color calibration. 
+However, there is still much to cover. Today, I am going to let my fingers do the talking and comment on Berry et al "An automated, high-throughput method for standardizing image color profiles to improve image-based plant phenotyping." PeerJ. 2018. (10.7717/peerj.5727). This paper is pretty nice and touches on a lot of problems related to color calibration that are really the focus of this blog, and not the article itself.
 
 There are two general procedures that are used to adjust the color in an image:
 
@@ -39,7 +39,7 @@ Color is so much more challenging that geometry. Previously, I discussed CASS wh
 
 Lenses are made of glass, mirrors, and other moving parts (unless mirrorless) and focus light onto a sensor. Different parts of the lens focus light more accurately or less accurately relative to other parts of the lens, this results in both geometric and radiometric(?) ocular distortion. Light bends differently because of the physical properties of the lens and colors may appear more-or-less accurate because of those. DIstortion is continuously variable throughout the image. So, right out of the box, given perfect lighting and uniform illuminance, the color accuracy needs to be calibrated for every pixel and applying a single, fixed transformation to every pixel will simply maintain any relative distortion. However, the lens is a fixed, static source of continuous distortion that should be systematic, non-random, and addressable.
 
-> One could imagine a solution similar to CASS for color color calivration using multiple color checker.
+> One could imagine a solution similar to CASS for color calibration using multiple color checkers.
 
 The light environment is critical. Outside vs inside, fluorescent vs incandescent, high wattage vs low wattage, focused vs scattered (diffuse), ... and the list goes on an on... Given indoor environments, which bulbs and in which fixtures are most appropriate for accurate color reproduction? Imagine using a bulb that has a very "blue"-white hue. This is going to exacerbate the blues that your camera "sees" and likely blow them out of proportion to the reds and greens. Red and Greens will absorb more of this hypothetical blue light and appear more muted, while the blue areas will reflect more and appear more vibrant. 
 
