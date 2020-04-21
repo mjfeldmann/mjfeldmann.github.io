@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "Parent Validation Measures"
+date:   2020-04-21 12:00:00
+categories: blog
+permalink: /posts/PVM/
+---
+Hello dear reader,
+
+This post is about an evolving story from my thesis work filled with betrayal, intrigue, and frustration... This my friends, is "Pedigree validation and why it matters."
+
+My Ph.D. started in September 2015. I came directly out of undergrad at the University of Arizona and felt that was best because I was motivated and had the momentum going for me. That February, Dr. Steven Knapp (my PI) and Glenn Cole had been hired to direct and lead the UC Strawberry Breeding Program into the future. Crosses started in the winter of 2015.
+
+Of the 200-ish crosses we did that year, 75 were selected to be part of my thesis project. These were selected simply because they had ≥20 progeny per family. We have since phenotyped these progeny (or a subset of them) for multiple years.
+
+Early on, in 2016/2017, we were debating what genotyping platform to go with for these samples. We were (and are still) convinced that the iStraw genotyping platform is insufficient for the types of questions we wanted to address but we wanted something that was going to provide high clarity with few bioinformatic headaches.
+
+In 2017/2018 we performed a small GBS experiment with the 30 parents of this factorial and found that 70-90% of the short reads (depeding on MAPQ) aligned uniquely to the reference genome published in 2019 (https://doi.org/10.1038/s41588-019-0356-4). However, the amount of missing data was something that we didn't really want to deal with. So, by the beginning of 2018, we had already decided that we would "wait" to build a new SNP-array.
+
+The new array was finished in 2019 and published in 2020 (https://doi.org/10.3389/fpls.2019.01789). So, the first time I had genetic data for the progeny of this thesis was in 2019, 3.5-4 years after starting. That is the frustrating truth, but I am happy for the quality of the data. Dr. Michael Hardigan, who drove the array design, did an amazing job. Read the paper, see for yourself!
+
+OK... where is this even going?
+
+Back in 2017, Dr. Tom Poorten was working with methods to validate Parent-Offspring (PO) relationships. For PO relationships, the probability that all markers in genome are Identity-By-State=0 (IBS0), works fairly well. This basically asks, what proportion of genotypes in the focal individual are impossible given the genotype of the proposed parent. This method doesn't result in clean separation between PO and non-PO clouds, so decisions have to be made that hopefully minimize the false positives while reducing the false negatives.
+
+This method can be extended simply to ask what proportion of genotypes in the focal individual are impossible given the genotype of the proposed parents (e.g. parent-parent-offspring [PPO]). Think of these as nested if-else statements. This method cleanly separates PPOs from non-PPOs and is preferred
+
+So... in 2019, when I got this genetic data back for my highly phenotyped factorial, I started validating the pedigrees. This is where problems ensued.
+
+Effectively, all of the progeny associated with one parent by written record, are improperly assigned suggesting that somewhere in the time since 2016, a sample or ID were improperly handled... somewhere in the last 4 years one mistake was made. This is a very expensive mistake. We have genotyped A LOT of matertial and so we are confident that we will be able to identify the genetic parent for those progeny, but we phenotyped the wrong individual. OR, we will be unable to identify that genetic parent and we loose those progeny for Parent-Offspring (GCA + SCA) analyses. 
+
+~2.5K of the SNP on the FanaSNP array are also on the iStraw 35K array  (https://doi.org/10.1186/s12864-015-1310-1). We had previsouly genotyped 1,300 items from the UC collection, nearly the entire collection, on the iStraw array and 2.5K shared locations should be more than enough to assign parents... In this way, we would even be able to calculate a kinship proxy using the iStraw data. It would likely be less accurate that K from the 30,000 SNPs on the FanaSNP array, but it would be better than assuming no relationship.
+
+
+The analyses themselves are really easy to run, and even to parallelize. There is no excuse for EVERY parent-offspring not to be validated in research and breeding programs.  These set of analyses allow you to identify sample issues, genotyping issues, accidental self-pollinated samples, and other issues (e.g., hypotheses around ascertainment bias). Code for these analyses will be made available along side a full blown pedigree analyses that the lab is working on.
+
+My ultimate point is that mistakes happen and can have large effects, even at low frequency and so we need to be more "forensically" inclined EARLIER. It would have been much easier to be like "this is the wrong sample" back in 2016 and not spent the time, space, and energy phenotyping an entire population. 
+
+As I get to publishing the work from the thesis, you will learn about the final decision.
+
+Best,
+Mitchell
+
+<div>
+<hr>
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24PA2uM8eZu8ahjVeJqACBr%2F"+"&opts=16862&num=10&ts=1582326793394");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+</div>

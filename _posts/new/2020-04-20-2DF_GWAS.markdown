@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "Two Degrees of Freedom Genome-Wide Association Studies"
+date:   2020-04-20 12:00:00
+categories: blog
+permalink: /posts/ColCal/
+---
+Hello dear reader,
+
+This is a genome-wide association study (GWAS) post.
+
+I am going to swing an idea around that I am needing to discuss regarding an analysis idea that has been plaguing me for sometime.  I want to do GWAS where my fixed effect is treated as a factor, instead of continuous.
+
+Treating the marker as a factor has several properties that I find particularly attractive, and only one negative (at least that I can think of, please comment, email, or tweet at more for futher conversation).
+
+Pros:
+
+1) Factors make more sense for genotypes -- There is no such thing as 0.5 minor allele dosage and genotypes are not continuous, they are inherently discrete, regardless of ploidy.
+
+2) Dominance exists -- the effect of a allele substitution can differ as you include add 1 or 2 alleles. The assumption that the heterozygous value is (AA + BB) / 2 seems bad. It was stated in (CITATION) that when the observations of each marker class is unbalanced (in reality) the interpretation of the regression coeffienct is no long an allele substitution.
+
+3) Estimating a value for each marker class enables many more comparisons -- dominance and recessive behavior is better estimated when the every value of each marker class is estimated directly. This also enables direct estimation of over and under dominance. to date, I have not seen GWAS for over or under dominance despite the wealth of literature on heterosis and GWAS for heterosis. Seems silly.
+
+Cons:
+
+1) Treating marker classes as factors requires multiple degrees of freedom which reduces the statistical power.
+
+<ul style="center">
+<center><a href="mjfeldmann.github.io"><img src="/images/sim.jpg" alt="Quick Power Sim" style="width:50%;height:50%;border:1px solid black"></a></center>
+</ul>
+
+Here, I plot the statistical power associated of a one-way ANOVA with marker factor levels. The x axis is the between group variace divided by the between group plus within group variance. Colored for sample size per factor level. Obviously, this is a bit naive, but I think it starts telling an interesting story leading to interesting questions. How under/over powered are we to start implementing 2DF-GWAS? 
+
+And sure, maybe this doesn't matter if you only work with inbred lines, but for the rest of use, why not?
+
+Best,
+Mitchell
+
+<div>
+<hr>
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24PA2uM8eZu8ahjVeJqACBr%2F"+"&opts=16862&num=10&ts=1582326793394");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+</div>
