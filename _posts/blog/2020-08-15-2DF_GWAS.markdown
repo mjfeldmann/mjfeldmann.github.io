@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Two Degrees of Freedom Genome-Wide Association Studies"
-date:   2020-04-20 12:00:00
+date:   2020-08-15 12:00:00
 categories: blog
-permalink: /posts/ColCal/
+permalink: /posts/2DFGWAS/
 ---
 Hello dear reader,
 
-This is a genome-wide association study (GWAS) post.
+This is a genome-wide association study (GWAS) post, but it is a silly and frivolous one that likely doesn't lead anywhere.
 
 I am going to swing an idea around that I am needing to discuss regarding an analysis idea that has been plaguing me for sometime.  I want to do GWAS where my fixed effect is treated as a factor, instead of continuous.
 
@@ -31,7 +31,9 @@ Cons:
 
 Here, I plot the statistical power associated of a one-way ANOVA with marker factor levels. The x axis is the between group variace divided by the between group plus within group variance. Colored for sample size per factor level. Obviously, this is a bit naive, but I think it starts telling an interesting story leading to interesting questions. How under/over powered are we to start implementing 2DF-GWAS? 
 
-And sure, maybe this doesn't matter if you only work with inbred lines, but for the rest of use, why not?
+And sure, maybe this doesn't matter if you only work with inbred lines, but for the rest of use, why not? 
+
+Also, what is the distribution of p-values of thousands of correlated F-tests?
 
 Best,
 Mitchell
